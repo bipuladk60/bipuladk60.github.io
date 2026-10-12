@@ -35,7 +35,6 @@ jobs:
       - run: pnpm build
         env:
           STATIC_EXPORT: "1"
-          PAGES_BASE_PATH: /bipul.adhikari.github.io
           GSC_CLIENT_EMAIL: ${{ secrets.GSC_CLIENT_EMAIL }}
           GSC_PRIVATE_KEY: ${{ secrets.GSC_PRIVATE_KEY }}
       - uses: actions/upload-pages-artifact@v3
